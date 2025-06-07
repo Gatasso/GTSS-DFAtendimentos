@@ -1,0 +1,112 @@
+:root {
+    --font-color: #e43f3f; 
+    --background-elements-color:rgb(231, 133, 133);
+}
+
+.content,.form,.container,.form-container,.paciente-atendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-container,.form-input,.form-buttons,.element, .separator{
+    width: 100%;
+    max-width: 600px;
+}
+
+.content {
+    height: 100vh;
+    color: var(--font-color); 
+}
+
+.form, .container{
+    gap: 15px;
+}
+
+.form-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-elements-color);
+}
+.form-group {
+    margin-bottom: 15px;
+    
+}
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--font-color);
+}
+.form-input {
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.form-buttons{
+    height: 50px;
+    max-height: 200px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-primary {
+    width: 100px;
+    background-color: var(--font-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.element{
+    background-color: var(--background-elements-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+.paciente-atendimento{
+}
+.paciente-image{
+    display: none;
+    width: 200px;
+    height: 200px;
+}
+
+.lista-pacientes {
+    display: none;
+}
+
+.lista-pacientes li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.lista-pacientes img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.paciente-info-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.lista-pacientes .prioridade img {
+    border: 2px solid red;
+}
+  
